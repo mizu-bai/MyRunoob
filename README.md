@@ -12,3 +12,5 @@ All the data shown in app come from Runoob website.
 
 Current:
 
+![image](https://github.com/mizu-bai/MyRunoob/blob/main/README.assets/main-page.png)
+
