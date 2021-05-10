@@ -1,0 +1,478 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1628F0FD541C0588220AB112 /* Pods_Runoob.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BA2290CB8052D8C025CA7D5 /* Pods_Runoob.framework */; };
+		1733922726497C3400431DEE /* MZItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1733922626497C3400431DEE /* MZItemCell.m */; };
+		1753A33726477C6700431DEE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1753A33626477C6700431DEE /* AppDelegate.m */; };
+		1753A33A26477C6700431DEE /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1753A33926477C6700431DEE /* SceneDelegate.m */; };
+		1753A34026477C6700431DEE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1753A33E26477C6700431DEE /* Main.storyboard */; };
+		1753A34226477C6700431DEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1753A34126477C6700431DEE /* Assets.xcassets */; };
+		1753A34526477C6700431DEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1753A34326477C6700431DEE /* LaunchScreen.storyboard */; };
+		1753A34826477C6700431DEE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1753A34726477C6700431DEE /* main.m */; };
+		1753A35226477E8200431DEE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1753A35126477E8200431DEE /* ViewController.m */; };
+		1753A3582647960B00431DEE /* MZGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 1753A3572647960B00431DEE /* MZGroup.m */; };
+		DD74D29EF47362AB9F0E753E /* MZItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DD74DB431F506150CB1E55E1 /* MZItem.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1733922526497C3400431DEE /* MZItemCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MZItemCell.h; sourceTree = "<group>"; };
+		1733922626497C3400431DEE /* MZItemCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MZItemCell.m; sourceTree = "<group>"; };
+		1753A33226477C6700431DEE /* Runoob.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Runoob.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1753A33526477C6700431DEE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1753A33626477C6700431DEE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1753A33826477C6700431DEE /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		1753A33926477C6700431DEE /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		1753A33F26477C6700431DEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1753A34126477C6700431DEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1753A34426477C6700431DEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1753A34626477C6700431DEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1753A34726477C6700431DEE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1753A35026477E8200431DEE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		1753A35126477E8200431DEE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1753A3562647960B00431DEE /* MZGroup.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MZGroup.h; sourceTree = "<group>"; };
+		1753A3572647960B00431DEE /* MZGroup.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MZGroup.m; sourceTree = "<group>"; };
+		4BA2290CB8052D8C025CA7D5 /* Pods_Runoob.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Runoob.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		83BE00E70307D9528CBFA6EC /* Pods-Runoob.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runoob.debug.xcconfig"; path = "Target Support Files/Pods-Runoob/Pods-Runoob.debug.xcconfig"; sourceTree = "<group>"; };
+		DD74D1614FC1C4B818A3104C /* MZItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZItem.h; sourceTree = "<group>"; };
+		DD74DB431F506150CB1E55E1 /* MZItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZItem.m; sourceTree = "<group>"; };
+		E6DCDFF9058843B9A9EB04A3 /* Pods-Runoob.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runoob.release.xcconfig"; path = "Target Support Files/Pods-Runoob/Pods-Runoob.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1753A32F26477C6700431DEE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1628F0FD541C0588220AB112 /* Pods_Runoob.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1753A32926477C6700431DEE = {
+			isa = PBXGroup;
+			children = (
+				1753A33426477C6700431DEE /* Runoob */,
+				1753A33326477C6700431DEE /* Products */,
+				E901E2A43C717886CBD1AFCD /* Pods */,
+				A4330F979F8E3B30FA1EB44C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1753A33326477C6700431DEE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1753A33226477C6700431DEE /* Runoob.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1753A33426477C6700431DEE /* Runoob */ = {
+			isa = PBXGroup;
+			children = (
+				DD74D0E80453958FD1AEE77F /* Models */,
+				DD74D9F1FD0B165BC1F75442 /* Views */,
+				DD74DF6802A74AADE8485EBA /* Controllers */,
+				DD74DD2A819E0B7025228644 /* Others */,
+				DD74DCAEDD720D987A11725B /* Supporting Files */,
+			);
+			path = Runoob;
+			sourceTree = "<group>";
+		};
+		A4330F979F8E3B30FA1EB44C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4BA2290CB8052D8C025CA7D5 /* Pods_Runoob.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DD74D0E80453958FD1AEE77F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1753A3562647960B00431DEE /* MZGroup.h */,
+				1753A3572647960B00431DEE /* MZGroup.m */,
+				DD74D1614FC1C4B818A3104C /* MZItem.h */,
+				DD74DB431F506150CB1E55E1 /* MZItem.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		DD74D9F1FD0B165BC1F75442 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1753A34326477C6700431DEE /* LaunchScreen.storyboard */,
+				1753A33E26477C6700431DEE /* Main.storyboard */,
+				1733922526497C3400431DEE /* MZItemCell.h */,
+				1733922626497C3400431DEE /* MZItemCell.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		DD74DCAEDD720D987A11725B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1753A34126477C6700431DEE /* Assets.xcassets */,
+				1753A34626477C6700431DEE /* Info.plist */,
+				1753A34726477C6700431DEE /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DD74DD2A819E0B7025228644 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				1753A33526477C6700431DEE /* AppDelegate.h */,
+				1753A33626477C6700431DEE /* AppDelegate.m */,
+				1753A33826477C6700431DEE /* SceneDelegate.h */,
+				1753A33926477C6700431DEE /* SceneDelegate.m */,
+			);
+			name = Others;
+			sourceTree = "<group>";
+		};
+		DD74DF6802A74AADE8485EBA /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1753A35026477E8200431DEE /* ViewController.h */,
+				1753A35126477E8200431DEE /* ViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		E901E2A43C717886CBD1AFCD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				83BE00E70307D9528CBFA6EC /* Pods-Runoob.debug.xcconfig */,
+				E6DCDFF9058843B9A9EB04A3 /* Pods-Runoob.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1753A33126477C6700431DEE /* Runoob */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1753A34B26477C6700431DEE /* Build configuration list for PBXNativeTarget "Runoob" */;
+			buildPhases = (
+				E115FE6508B4A9EEAE3AC59D /* [CP] Check Pods Manifest.lock */,
+				1753A32E26477C6700431DEE /* Sources */,
+				1753A32F26477C6700431DEE /* Frameworks */,
+				1753A33026477C6700431DEE /* Resources */,
+				CDB14E0E1FBE768F18505E63 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Runoob;
+			productName = Runoob;
+			productReference = 1753A33226477C6700431DEE /* Runoob.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1753A32A26477C6700431DEE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MZ;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					1753A33126477C6700431DEE = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 1753A32D26477C6700431DEE /* Build configuration list for PBXProject "Runoob" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1753A32926477C6700431DEE;
+			productRefGroup = 1753A33326477C6700431DEE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1753A33126477C6700431DEE /* Runoob */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1753A33026477C6700431DEE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1753A34526477C6700431DEE /* LaunchScreen.storyboard in Resources */,
+				1753A34226477C6700431DEE /* Assets.xcassets in Resources */,
+				1753A34026477C6700431DEE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CDB14E0E1FBE768F18505E63 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Runoob/Pods-Runoob-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Runoob/Pods-Runoob-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Runoob/Pods-Runoob-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E115FE6508B4A9EEAE3AC59D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Runoob-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1753A32E26477C6700431DEE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1753A35226477E8200431DEE /* ViewController.m in Sources */,
+				1753A33726477C6700431DEE /* AppDelegate.m in Sources */,
+				1733922726497C3400431DEE /* MZItemCell.m in Sources */,
+				1753A34826477C6700431DEE /* main.m in Sources */,
+				1753A33A26477C6700431DEE /* SceneDelegate.m in Sources */,
+				1753A3582647960B00431DEE /* MZGroup.m in Sources */,
+				DD74D29EF47362AB9F0E753E /* MZItem.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1753A33E26477C6700431DEE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1753A33F26477C6700431DEE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1753A34326477C6700431DEE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1753A34426477C6700431DEE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1753A34926477C6700431DEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1753A34A26477C6700431DEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1753A34C26477C6700431DEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83BE00E70307D9528CBFA6EC /* Pods-Runoob.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A525GA3USA;
+				INFOPLIST_FILE = Runoob/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.Runoob;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1753A34D26477C6700431DEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6DCDFF9058843B9A9EB04A3 /* Pods-Runoob.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A525GA3USA;
+				INFOPLIST_FILE = Runoob/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.Runoob;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1753A32D26477C6700431DEE /* Build configuration list for PBXProject "Runoob" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1753A34926477C6700431DEE /* Debug */,
+				1753A34A26477C6700431DEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1753A34B26477C6700431DEE /* Build configuration list for PBXNativeTarget "Runoob" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1753A34C26477C6700431DEE /* Debug */,
+				1753A34D26477C6700431DEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1753A32A26477C6700431DEE /* Project object */;
+}
