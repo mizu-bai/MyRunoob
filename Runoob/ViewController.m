@@ -9,7 +9,11 @@
 #import "MZItem.h"
 #import "MZGroup.h"
 #import "MZItemCell.h"
+#import "NSString+Sandbox.h"
 #import <Ono.h>
+
+#define kRunoobHTML @"runoob.html"
+#define kRunoobURL @"http://www.runoob.com"
 
 
 @interface ViewController () <UITableViewDelegate, UITableViewDataSource>
@@ -31,16 +35,27 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    // table view dataSource & delegate
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
-    NSURL *url = [NSURL URLWithString:@"http://www.runoob.com"];
+    NSURL *url = [NSURL URLWithString:kRunoobURL];
     [self requestWebPageWithURL:url];
-    NSLog(@"%@", self.models);
 }
 
 #pragma mark - request web page
 
 - (void)requestWebPageWithURL:(NSURL *)url {
+    // is saved locally
+    NSString *path = [kRunoobHTML appendCache];
+//    NSLog(@"%@", [kRunoobHTML appendCache]);
+    __block NSString *html = [[NSString alloc] initWithContentsOfFile:path];
+    if (html) {
+        NSLog(@"Load html locally");
+        self.models = [self htmlParserWith:html];
+        return;
+    }
+    // request
+    NSLog(@"Download starts");
     // config request
     NSMutableURLRequest *requestM = [NSMutableURLRequest requestWithURL:url];
     [requestM setHTTPMethod:@"GET"];
@@ -55,8 +70,12 @@
         NSHTTPURLResponse *httpurlResponse = (NSHTTPURLResponse *) response;
         if (httpurlResponse.statusCode == 200 || httpurlResponse.statusCode == 304) {
             // process data
-            NSString *html = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+            html = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
             self.models = [self htmlParserWith:html];
+            NSLog(@"Download successfully");
+            // save html locally
+            [html writeToFile:[kRunoobHTML appendCache] atomically:YES];
+            NSLog(@"Saved successfully");
         } else {
             NSLog(@"Error: %zd", httpurlResponse.statusCode);
         }

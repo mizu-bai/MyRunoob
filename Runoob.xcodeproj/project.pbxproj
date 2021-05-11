@@ -18,6 +18,7 @@
 		1753A35226477E8200431DEE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1753A35126477E8200431DEE /* ViewController.m */; };
 		1753A3582647960B00431DEE /* MZGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 1753A3572647960B00431DEE /* MZGroup.m */; };
 		DD74D29EF47362AB9F0E753E /* MZItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DD74DB431F506150CB1E55E1 /* MZItem.m */; };
+		DD74DBD068E92574BB1A001A /* NSString+Sandbox.m in Sources */ = {isa = PBXBuildFile; fileRef = DD74DEA091A62E934C54CBC6 /* NSString+Sandbox.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,7 +41,9 @@
 		4BA2290CB8052D8C025CA7D5 /* Pods_Runoob.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Runoob.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		83BE00E70307D9528CBFA6EC /* Pods-Runoob.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runoob.debug.xcconfig"; path = "Target Support Files/Pods-Runoob/Pods-Runoob.debug.xcconfig"; sourceTree = "<group>"; };
 		DD74D1614FC1C4B818A3104C /* MZItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZItem.h; sourceTree = "<group>"; };
+		DD74DA20887651F3AB57CF01 /* NSString+Sandbox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Sandbox.h"; sourceTree = "<group>"; };
 		DD74DB431F506150CB1E55E1 /* MZItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZItem.m; sourceTree = "<group>"; };
+		DD74DEA091A62E934C54CBC6 /* NSString+Sandbox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Sandbox.m"; sourceTree = "<group>"; };
 		E6DCDFF9058843B9A9EB04A3 /* Pods-Runoob.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runoob.release.xcconfig"; path = "Target Support Files/Pods-Runoob/Pods-Runoob.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -82,6 +85,7 @@
 				DD74DF6802A74AADE8485EBA /* Controllers */,
 				DD74DD2A819E0B7025228644 /* Others */,
 				DD74DCAEDD720D987A11725B /* Supporting Files */,
+				DD74D49C0BCE14340B518DEA /* Categories */,
 			);
 			path = Runoob;
 			sourceTree = "<group>";
@@ -103,6 +107,15 @@
 				DD74DB431F506150CB1E55E1 /* MZItem.m */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		DD74D49C0BCE14340B518DEA /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				DD74DEA091A62E934C54CBC6 /* NSString+Sandbox.m */,
+				DD74DA20887651F3AB57CF01 /* NSString+Sandbox.h */,
+			);
+			name = Categories;
 			sourceTree = "<group>";
 		};
 		DD74D9F1FD0B165BC1F75442 /* Views */ = {
@@ -276,6 +289,7 @@
 				1753A33A26477C6700431DEE /* SceneDelegate.m in Sources */,
 				1753A3582647960B00431DEE /* MZGroup.m in Sources */,
 				DD74D29EF47362AB9F0E753E /* MZItem.m in Sources */,
+				DD74DBD068E92574BB1A001A /* NSString+Sandbox.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
