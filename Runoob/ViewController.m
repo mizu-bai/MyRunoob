@@ -69,7 +69,6 @@
         NSLog(@"Downloading");
         NSHTTPURLResponse *httpurlResponse = (NSHTTPURLResponse *) response;
         if (httpurlResponse.statusCode == 200 || httpurlResponse.statusCode == 304) {
-
             // process data
             NSString *html = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
             self.models = [self htmlParserWith:html];
