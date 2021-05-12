@@ -45,18 +45,7 @@
 #pragma mark - request web page
 
 - (void)requestWebPageWithURL:(NSURL *)url {
-    // is saved locally
-    NSString *path = [kRunoobHTML appendCache];
-//    NSLog(@"%@", [kRunoobHTML appendCache]);
-    __block NSString *html = [[NSString alloc] initWithContentsOfFile:path];
-    if (html) {
-        NSLog(@"Load html locally");
-        self.models = [self htmlParserWith:html];
-        return;
-    }
     // request
-    NSLog(@"Download starts");
-    // config request
     NSMutableURLRequest *requestM = [NSMutableURLRequest requestWithURL:url];
     [requestM setHTTPMethod:@"GET"];
     [requestM setTimeoutInterval:10.0];
@@ -65,14 +54,26 @@
     NSURLSessionDataTask *dataTask = [session dataTaskWithRequest:[requestM copy] completionHandler:^(NSData *_Nullable data, NSURLResponse *_Nullable response, NSError *_Nullable connectionError) {
         if (connectionError) {
             NSLog(@"Error: %@", connectionError);
+            NSLog(@"Loading local html");
+            // is saved locally
+            NSString *path = [kRunoobHTML appendCache];
+            NSString *html = [[NSString alloc] initWithContentsOfFile:path];
+            if (html) {
+                NSLog(@"Load html locally");
+                self.models = [self htmlParserWith:html];
+            } else {
+                NSLog(@"Error: No connection and local cache!");
+            }
             return;
         }
+        NSLog(@"Downloading");
         NSHTTPURLResponse *httpurlResponse = (NSHTTPURLResponse *) response;
         if (httpurlResponse.statusCode == 200 || httpurlResponse.statusCode == 304) {
+
             // process data
-            html = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+            NSString *html = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
             self.models = [self htmlParserWith:html];
-            NSLog(@"Download successfully");
+            NSLog(@"Downloaded successfully");
             // save html locally
             [html writeToFile:[kRunoobHTML appendCache] atomically:YES];
             NSLog(@"Saved successfully");
